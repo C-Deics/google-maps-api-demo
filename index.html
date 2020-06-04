@@ -59,7 +59,7 @@
 		// this event handler demonstrates Google Places service
 		// by requesting all restaurants within a 10000 metre radius
 		// based on the current geo location (defined by globalPos object)
-		function locations() {
+		function setLocations() {
 			// delete any existing markers
 			deleteMarkers();
 			
@@ -156,7 +156,7 @@
     </select>
 	</div>
 	<div id="buttons">
-	<input type="button" id="btnLoad"  value="Load Places Near Me &#9657; "  onclick="locations();" />
+	<input type="button" id="btnLoad"  value="Load Places Near Me &#9657; "  onclick="setLocations();" />
 	<input type="button" id="btnClear"  value="Clear Map &#9657;"  onclick="deleteMarkers();" />
 	</div>
 	
