@@ -132,13 +132,15 @@
 	
 </head>
 <body>
-<div id="content">
+<main>
 <h1 >Student Party Needs Map</h1>
-<div id="selectors">
-<div id="dropdown">
-        <h3> Choose Place For Party Needs: </h3>
+<div id="line"></div>
+
+<form>
+<div id="inputs">
+        
     <select id="locations" name="locations">
-	<option selected disabled>Choose Place</option>
+	<option selected disabled hidden>Choose Location</option>
         <option value="atm">ATM</option>
         <option value="bar">Bar</option>
 		<option value="bus station">Bus Station</option>
@@ -152,15 +154,17 @@
         <option value="taxi stand">Taxi Stand</option>
         
     </select>
-	<input type="button" id="btnLoad"  value="Load Places Near Me &#9654; "  onclick="locations();" />
-	<input type="button" id="btnClear"  value="Clear Map &#9654;"  onclick="deleteMarkers();" />
+	</div>
+	<div id="buttons">
+	<input type="button" id="btnLoad"  value="Load Places Near Me &#9657; "  onclick="locations();" />
+	<input type="button" id="btnClear"  value="Clear Map &#9657;"  onclick="deleteMarkers();" />
 	</div>
 	
 	<div id="map"  >
 	</div>
-	</div>
+	</form>
         
 	
-	</div>
+	</main>
 </body>
 </html>
